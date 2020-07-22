@@ -5,4 +5,4 @@ before_install:
     - docker build -t deshneil/react-app -f Dockerfile.dev .
 
 script:
-    - docker run deshneil/react-app npm run test -- --coverage
+    - docker run -e CI=true deshneil/react-app npm run test -- --coverage
