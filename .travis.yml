@@ -1,0 +1,8 @@
+sudo: required
+services:
+    - docker
+before_install:
+    - docker build -t deshneil/react-app -f Dockerfile.dev .
+
+script:
+    - docker run deshneil/react-app npm run test -- --coverage
