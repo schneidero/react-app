@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hot reload in containers must work
+          Chaii man don suffer
         </p>
         <a
           className="App-link"
